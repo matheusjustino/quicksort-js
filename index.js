@@ -23,9 +23,9 @@ async function removeLesser(array, pivotValue) {
 
 function getRandomIndex(arrayLength) {
   const randomNumber = Math.random() * arrayLength;
-  const numberRoundedFlor = Math.floor(randomNumber);
+  const numberRoundedFloor = Math.floor(randomNumber);
   const limit = arrayLength - 1;
-  return numberRoundedFlor < limit ? numberRoundedFlor : limit;
+  return numberRoundedFloor < limit ? numberRoundedFloor : limit;
 }
 
 async function recursiveSort(array) {
